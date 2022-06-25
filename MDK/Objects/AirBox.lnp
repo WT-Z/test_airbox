@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+".\objects\lcd.o"
+".\objects\sc09.o"
+".\objects\uart_pm.o"
+".\objects\main.o"
+".\objects\airbox.o"
+".\objects\mcu_api.o"
+".\objects\protocol.o"
+".\objects\system.o"
+".\objects\interrupts_hc32l13x.o"
+".\objects\system_hc32l13x.o"
+".\objects\startup_hc32l13x.o"
+".\objects\ddl.o"
+".\objects\gpio.o"
+".\objects\i2c.o"
+".\objects\sysctrl.o"
+".\objects\uart.o"
+".\objects\lpuart.o"
+".\objects\timer3.o"
+".\objects\bt.o"
+".\objects\flash.o"
+".\objects\wdt.o"
+--library_type=microlib --strict --scatter ".\Objects\AirBox.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\AirBox.map" -o .\Objects\AirBox.axf
